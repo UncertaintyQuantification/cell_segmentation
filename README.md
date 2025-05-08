@@ -1,7 +1,5 @@
 # Unsupervised Cellular Boundary Detection by Fast Gaussian Processes
-This repository contains the codes of the paper *Unsupervised Cellular Boundary Detection by Fast Gaussian Processes* by Laura Baracaldo, Blythe King, Haoran Yan, Yizi Lin, Nina Miolane, and Mengyang Gu.
-
-This folder contains data and code to reproduce the results from the paper.
+This repository contains the codes and data to reproduce the results from the paper *Unsupervised Cellular Boundary Detection by Fast Gaussian Processes* by Laura Baracaldo, Blythe King, Haoran Yan, Yizi Lin, Nina Miolane, and Mengyang Gu.
 
 There are 9 folders.
 
