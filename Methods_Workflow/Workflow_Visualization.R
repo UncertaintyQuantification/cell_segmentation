@@ -55,5 +55,5 @@ image2D(bin,zlim=c(0,max(as.vector(test))), col=rev(gray(seq(0, 1, length.out = 
 image2D(distmap(bin), xlab="", ylab="", axes=F)
 
 #GP Masks by watershed (final)
-p = colorRampPalette(c("white", rainbow(length(unique(as.vector(GP_masks))))))
-image2D(GP_masks, col=c("white",rainbow(100)), xlab="", ylab="", axes=F, colkey=F)
+library(randomcoloR)
+image2D(GP_masks, col=c("white",distinctColorPalette(length(unique(as.vector(GP_masks)))-1)), xlab="", ylab="", axes=F, colkey=F)

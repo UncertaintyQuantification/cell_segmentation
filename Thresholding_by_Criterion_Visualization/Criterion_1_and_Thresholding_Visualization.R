@@ -9,6 +9,7 @@ library(plot3D)
 library(dplyr)
 library(ggplot2)
 library(EBImage)
+library(plotly)
 #Ensure directory is set to file folder
 source("../src/Modified_Functions_RGasp.R")
 
@@ -138,7 +139,7 @@ ggplot(data = df, aes(x=as.vector(predmean_mat))) + geom_histogram(color="black"
    geom_vline(xintercept=pct_2*max(as.vector(predmean_mat)), col="green", size = 0.75, linetype = "dashed") +
    geom_vline(xintercept=pct_3*max(as.vector(predmean_mat)), col="yellow", size = 0.75, linetype = "dashed") +
    geom_vline(xintercept=pct_4*max(as.vector(predmean_mat)), col="orange", size = 0.75, linetype = "dashed") +
-   xlab("Pixel Intensity Value") +
+   xlab("Predictive Mean of Intensity") +
    ylab("Frequency") +
    theme_minimal() + theme(text = element_text(size = 15))
 
@@ -196,7 +197,7 @@ surface_plot <- plot_ly() %>%
         showline = TRUE,
         title = ""
       ),
-      zaxis = list(title = "Height")
+      zaxis = list(title = "Predictive Mean of Intensity")
     )
   )
 
