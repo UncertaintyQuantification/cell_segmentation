@@ -267,7 +267,7 @@ plot_data <- combined_table %>%
 # Create and save the boxplot comparing GP vs. ImageJ
 plot_box <- ggplot(plot_data, aes(x = as.factor(Threshold), y = AP, fill = Method)) +
   geom_boxplot(outlier.shape = NA, width = 0.7) +
-  geom_jitter(width = 0.2, alpha = 0.5, size = 2, aes(color = Method)) +
+  #geom_jitter(width = 0.2, alpha = 0.5, size = 2, aes(color = Method)) + #includes points
   labs(x = "Threshold", 
        y = "Average Precision (AP)", 
        fill = "Method",

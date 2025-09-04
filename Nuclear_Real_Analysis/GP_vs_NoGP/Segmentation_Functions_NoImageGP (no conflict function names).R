@@ -1,4 +1,4 @@
-#Segmentation with no GP
+#Segmentation with no image GP
 
 threshold_image2 <- function(mat, percentage, count = TRUE) {
   max_value <- max(mat, na.rm = TRUE)
